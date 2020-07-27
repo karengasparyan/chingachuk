@@ -1,5 +1,5 @@
 import React from 'react';
-import Ching from "./pages/Ching";
+import Ching from "./pages/Prs";
 
 function App() {
   return (
