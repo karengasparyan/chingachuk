@@ -1,28 +1,78 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.prsContainer{
+
+.prsContainer {
   display: flex;
-  flex-direction: row;
-  img{
-    cursor: pointer;
-    width: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  height: auto;
+
+  .prsWinArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .prsArea {
+      margin: 20px;
+
+      span {
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(59, 52, 52, 0.45);
+      }
+    }
+
+    .prsImgWinDesc {
+      width: 250px;
+      transform: rotate(45deg);
+      background-color: #bba75d;
+    }
+
+    .prsImgWin {
+      width: 300px;
+      transform: rotate(45deg);
+      background-color: #359e2d;
+    }
+
+    .prsImgLose {
+      width: 250px;
+      transform: rotate(45deg);
+      background-color: #9e2f2f;
+    }
   }
 }
-.prsImgWinDesc{
-  width: 80px;
-  transform: rotate(45deg);
-  background-color: #bba75d;
+
+.PrsWinCounts {
+  margin: 50px;
+
+  span {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(59, 52, 52, 0.45);
+  }
 }
-.prsImgWin{
-  width: 80px;
-  transform: rotate(45deg);
-  background-color: #359e2d;
-}
-.prsImgLose{
-  width: 80px;
-  transform: rotate(45deg);
-  background-color: #9e2f2f;
+
+.prsPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+
+  img {
+    cursor: pointer;
+    width: 80px;
+    background-color: #4caa8d;
+    margin: 10px;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
 }
